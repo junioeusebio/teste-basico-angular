@@ -1,0 +1,29 @@
+{
+    "home":
+    {
+        "slogan": "AI Tech - Inovando a Busca com Inteligência Artificial",
+        "description1": "Na AI Tech, transformamos a maneira como você encontra informações e soluções.",
+        "description2": "Nossa tecnologia de ponta de inteligência artificial oferece uma experiência de busca rápida, precisa e personalizada, garantindo que você obtenha os resultados mais relevantes com apenas alguns cliques.",
+        "hiring": "Estamos contratando!",
+        "CommercialDirector":  "Diretor Comercial",
+        "late": "Você chegou tarde, vaga indisponivel no momento.",
+        "viewVacancy": "Visualizar vaga",
+        "develop": "Desenvolvedor Software IA",
+        "coordAdm": "Coordenador Administrativo",
+        "viewVacancyDetails": "Clique em visualizar vaga para",
+        "knowMore": "saber mais",
+        "dexterStudents": "Vagas destinadas a alunos Dexter English.",
+        "copyright": "Copyright ©2024 AI Tech. Todos os direitos reservados.",
+        "terms": "Termos de Uso Política de Privacidade"
+    },
+    "vacancy": {
+        "vacancy": "Vaga",       
+        "requests": "Requisitos",
+        "requests1": "Ensino Médio Completo, desejável Superior (cursando ou concluído);",
+        "requests2": "Experiência prévia em funções administrativas, com ênfase em supervisão ou coordenação.",
+        "requests3": "Conhecimento em gestão financeira e controle orçamentário.",
+        "requests4": "Habilidade com sistemas e pacote Office;",
+        "requests5": "Capacidade de tomar iniciativa e agir de forma proativa para identificar oportunidades e resolver problemas.",
+        "back": "Voltar" 
+    }
+}

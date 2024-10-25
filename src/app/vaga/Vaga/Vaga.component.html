@@ -20,32 +20,27 @@
                       margin-top: 10px;
                       border-radius: 50%;"
           src="../assets/aitechlogo.jpeg">   
-         <h2>Vaga:<strong> Coordenador Administrativo</strong>
+         <h2>{{ 'vacancy.vacancy' | translate }}:<br/><strong>{{ 'home.coordAdm' | translate }} </strong>
         </h2>
          <p class="lead text-muted" style="margin-bottom: -15px;">
-          Requisitos: <br />
-Ensino Médio Completo, desejável Superior (cursando ou concluído);<br />
-Experiência prévia em funções administrativas, com ênfase em supervisão ou coordenação.<br />
-Conhecimento em gestão financeira e controle orçamentário.<br />
-Habilidade com sistemas e pacote Office;<br />
-Capacidade de tomar iniciativa e agir de forma proativa para identificar oportunidades e resolver problemas.<br />
+          {{ 'vacancy.requests' | translate }}:<br />
+          {{ 'vacancy.requests1' | translate }}<br />
+          {{ 'vacancy.requests2' | translate }}<br />
+          {{ 'vacancy.requests3' | translate }}<br />
+          {{ 'vacancy.requests4' | translate }}<br />
+          {{ 'vacancy.requests5' | translate }}<br />
           </p>
       </div>
-      <button type="button" class="btn btn-outline-secondary" style=" margin-top: 150px" (click)="voltar()">Voltar</button>
+      <button type="button" class="btn btn-outline-secondary" style=" margin-top: 100px" (click)="voltar()">{{ 'vacancy.back' | translate }}</button>
      
     </section>
   </main>
-
-  <!-- <footer class="text-muted">
+  <footer class="text-muted" style="margin-top: 20px;">
     <div class="container">
-
-      <p>Copyright © 2024 AI Tech.  
-          Todos os direitos reservados. 
-          </p>
-      <p><a href="../../">Termos de Uso 
-          Política de Privacidade</a>.</p>
+      <p>{{ 'home.copyright' | translate }}</p>
+      <p><a href="../../">{{ 'home.terms' | translate }}</a>.</p>
     </div>
-  </footer> -->
+  </footer>
 
   <!-- Principal JavaScript do Bootstrap
   ================================================== -->

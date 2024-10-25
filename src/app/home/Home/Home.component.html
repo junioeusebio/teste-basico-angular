@@ -6,7 +6,11 @@
       <div class="container d-flex justify-content-between">
         <a href="#" class="navbar-brand d-flex align-items-center">
           <strong>AI Tech</strong>
-       </a>          
+       </a>
+       <div class="text-align: left" *ngIf="show">
+          <img src="../assets/sbeua.webp" (click)="useLanguage('en')">
+          <img style="margin-left: 10px;" src="../assets/sbbrazil.webp" (click)="useLanguage('pt')">          
+       </div>
       </div>
     </div>
   </header>
@@ -20,18 +24,19 @@
                       margin-top: 10px;
                       border-radius: 50%;"
           src="../assets/aitechlogo.jpeg">   
-         <h2><strong> Tech - Inovando a Busca com Inteligência Artificial</strong>
+         <h2><strong>{{ 'home.slogan' | translate }}</strong>
           <br/></h2>
-         <p class="lead text-muted" style="margin-bottom: -15px;">
-          Na AI Tech, transformamos a maneira como você encontra informações e soluções.<br/>
-          Nossa tecnologia de ponta de inteligência artificial oferece uma experiência de busca rápida, 
-          precisa e personalizada, garantindo que você obtenha os resultados mais relevantes com apenas alguns cliques.
-          </p>
+          <div style="margin-bottom: -15px;">
+            <p class="lead text-muted">            
+            {{ 'home.description1' | translate }}<br/>
+            {{ 'home.description2' | translate }}          
+            </p>
+          </div>
       </div>
     </section>
     <div class="album py-5 bg-light">
       <h1 class="jumbotron-heading" style="text-align: center; margin: auto; display: block; margin-bottom: 15px;">
-          Estamos contratando!
+          {{ 'home.hiring' | translate }}
       </h1>
       <div class="container">
         <div class="row">
@@ -39,11 +44,11 @@
             <div class="card mb-4 shadow-sm">
               <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="../assets/dircom.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
               <div class="card-body">
-                <h4>Diretor Comercial</h4>
-                <p class="card-text">Você chegou tarde, vaga indisponivel no momento.</p>
+                <h4>{{ 'home.CommercialDirector' | translate }}</h4>
+                <p class="card-text">{{ 'home.late' | translate }}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary" disabled>Visualizar vaga</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" disabled>{{ 'home.viewVacancy' | translate }}</button>
                   </div>                    
                 </div>
               </div>
@@ -53,11 +58,11 @@
             <div class="card mb-4 shadow-sm">
               <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="../assets/coordadm.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
               <div class="card-body">
-                  <h4>Coordenador Administrativo</h4>                    
-                <p class="card-text">Clique em visualizar vaga para <br/>saber mais.</p>
+                  <h4>{{ 'home.coordAdm' | translate }}</h4>                  
+                <p class="card-text">{{ 'home.viewVacancyDetails' | translate }}<br/>{{ 'home.knowMore' | translate }}.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-success" (click)="verVaga()">Visualizar vaga</button>
+                      <button type="button" class="btn btn-sm btn-outline-success" (click)="verVaga()">{{ 'home.viewVacancy' | translate }}</button>
                   </div>
                 </div>
               </div>
@@ -67,11 +72,11 @@
             <div class="card mb-4 shadow-sm">
               <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="../assets/desvsoft.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
               <div class="card-body">
-                <h4>Desenvolvedor Software IA</h4>
-                <p class="card-text">Você chegou tarde, vaga indisponivel no momento.</p>
+                <h4>{{ 'home.develop' | translate }}</h4>
+                <p class="card-text"><p class="card-text">{{ 'home.late' | translate }}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary" disabled>Visualizar vaga</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" disabled>{{ 'home.viewVacancy' | translate }}</button>
                   </div>
                 </div>
               </div>
@@ -80,19 +85,15 @@
         </div>
       </div>
       <p class="jumbotron-heading" style="text-align: center; margin: auto; display: block; margin-top: 5px; margin-bottom: 5px;">
-          ** Vagas destinadas a alunos Dexter English.
+          ** {{ 'home.dexterStudents' | translate }} 
           </p>
     </div>
   </main>
 
   <footer class="text-muted">
     <div class="container">
-
-      <p>Copyright © 2024 AI Tech.  
-          Todos os direitos reservados. 
-          </p>
-      <p><a href="../../">Termos de Uso 
-          Política de Privacidade</a>.</p>
+      <p>{{ 'home.copyright' | translate }}</p>
+      <p (click)="toggleButtonTransate()"><a style="color: brown;">{{ 'home.terms' | translate }} </a>.</p>
     </div>
   </footer>
 

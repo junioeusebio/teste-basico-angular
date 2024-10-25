@@ -1,0 +1,29 @@
+{
+    "home":
+    {
+        "slogan": "AI Tech - Innovating Search with Artificial Intelligence",
+        "description1": "At AI Tech, we transform the way you find information and solutions.",
+        "description2": "Our cutting-edge artificial intelligence technology offers a fast, accurate and personalized search experience, ensuring that you get the most relevant results in just a few clicks.",
+        "hiring": "We're hiring!",
+        "CommercialDirector":  "Commercial Director",
+        "late": "You arrived late, vacancy unavailable at the moment.",
+        "viewVacancy": "View vacancy",
+        "develop": "AI Software Develop",
+        "coordAdm": "Administrative Coordinator",
+        "viewVacancyDetails": "Click on view vacancy to",
+        "knowMore": "learn more",
+        "dexterStudents": "Vacancies for Dexter English students",
+        "copyright": "Copyright ©2024 AI Tech. All rights reserved.",
+        "terms": "Terms of Use Privacy Policy"
+    },
+    "vacancy": {
+        "vacancy": "Vacancy",
+        "requests": "Requirements",
+        "requests1": "Completed high school, university degree desirable (currently studying or completed);",
+        "requests2": "Previous experience in administrative functions, with an emphasis on supervision or coordination.",
+        "requests3": "Knowledge of financial management and budget control.",
+        "requests4": "Ability with systems and Office package;",
+        "requests5": "Ability to take initiative and act proactively to identify opportunities and solve problems.",
+        "back": "Back" 
+    }
+}
